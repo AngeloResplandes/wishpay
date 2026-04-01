@@ -1,0 +1,40 @@
+/* ===== FOOTER ===== */
+.footer {
+  background: var(--color-gray-100);
+  border-top: 1px solid var(--color-gray-200);
+  padding-top: 4rem;
+}
+.footer__inner {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 4rem;
+  padding-bottom: 3rem;
+}
+.footer__brand-logo { display: flex; align-items: center; gap: 10px; margin-bottom: 1rem; }
+.footer__brand-logo-text { font-size: 1.1rem; font-weight: 800; color: var(--color-text); }
+.footer__brand-desc { font-size: 0.85rem; color: var(--color-gray-600); line-height: 1.7; margin-bottom: 1.5rem; max-width: 220px; }
+.footer__follow-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-gray-400); margin-bottom: 0.75rem; }
+.footer__socials { display: flex; gap: 10px; }
+.footer__social-link {
+  width: 36px; height: 36px;
+  background: var(--color-white);
+  border: 1.5px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-base);
+  color: var(--color-gray-600);
+}
+.footer__social-link:hover { border-color: var(--color-purple-light); background: var(--color-purple-bg); color: var(--color-purple-deep); }
+.footer__links { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+.footer__col h5 { font-size: 0.82rem; font-weight: 700; color: var(--color-text); letter-spacing: 0.03em; margin-bottom: 1rem; }
+.footer__col ul { display: flex; flex-direction: column; gap: 0.6rem; }
+.footer__col ul a { font-size: 0.84rem; color: var(--color-gray-600); transition: color var(--transition-fast); }
+.footer__col ul a:hover { color: var(--color-purple-mid); }
+.footer__bottom { border-top: 1px solid var(--color-gray-200); padding: 1.25rem 0; }
+.footer__bottom-inner { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.footer__copyright { font-size: 0.8rem; color: var(--color-gray-400); }
+.footer__legal { display: flex; gap: 1.25rem; }
+.footer__legal a { font-size: 0.8rem; color: var(--color-gray-400); transition: color var(--transition-fast); }
+.footer__legal a:hover { color: var(--color-purple-mid); }

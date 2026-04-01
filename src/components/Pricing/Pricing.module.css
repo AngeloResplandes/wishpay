@@ -1,0 +1,6 @@
+/* ===== PRICING ===== */
+.pricing { padding: 5rem 0; background: var(--color-gray-50); }
+.pricing__header { text-align: center; max-width: 520px; margin: 0 auto 3rem; }
+.pricing__header h2 { font-size: clamp(1.8rem, 3.5vw, 2.5rem); font-weight: 800; letter-spacing: -0.025em; margin-bottom: 0.75rem; }
+.pricing__header p { font-size: 1rem; color: var(--color-gray-600); line-height: 1.7; }
+.pricing__grid { display: grid; grid-template-columns: 1fr 1.05fr 1fr; gap: 1.25rem; align-items: start; }
