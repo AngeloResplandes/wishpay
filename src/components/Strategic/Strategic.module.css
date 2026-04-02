@@ -98,3 +98,39 @@
   margin-bottom: 12px;
 }
 .strat-card-float-text { font-size: 0.6rem; font-weight: 600; color: rgba(255,255,255,0.8); letter-spacing: 0.06em; }
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1024px) {
+  .strategic__inner {
+    grid-template-columns: 1fr;
+  }
+  .strategic__visual {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .strategic__features {
+    grid-template-columns: 1fr;
+  }
+  .strategic__title {
+    max-width: 100%;
+  }
+  .strategic__subtitle {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .strategic__features {
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .strategic__features {
+    gap: 1rem;
+  }
+}

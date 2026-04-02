@@ -4,3 +4,31 @@
 .pricing__header h2 { font-size: clamp(1.8rem, 3.5vw, 2.5rem); font-weight: 700; letter-spacing: -0.025em; margin-bottom: 0.75rem; }
 .pricing__header p { font-size: 1rem; color: var(--color-gray-600); line-height: 1.7; }
 .pricing__grid { display: grid; grid-template-columns: 1fr 1.05fr 1fr; gap: 1.25rem; align-items: start; }
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1024px) {
+  .pricing__grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing__header {
+    margin-bottom: 2rem;
+  }
+  .pricing__grid {
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing__header p {
+    font-size: 0.93rem;
+  }
+  .pricing__grid {
+    max-width: 100%;
+  }
+}

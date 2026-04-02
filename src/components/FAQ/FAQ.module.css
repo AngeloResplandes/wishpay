@@ -26,3 +26,37 @@
 .faq-answer { max-height: 0; overflow: hidden; transition: max-height var(--transition-slow), padding var(--transition-base); }
 .faq-item-open .faq-answer { max-height: 400px; padding-bottom: 1.25rem; }
 .faq-answer p { font-size: 0.9rem; color: var(--color-gray-600); line-height: 1.7; }
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1024px) {
+  .faq__inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .faq__header {
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq-question {
+    font-size: 0.9rem;
+    padding: 1rem 0;
+  }
+  .faq-answer p {
+    font-size: 0.875rem;
+  }
+  .faq-item-open .faq-answer {
+    max-height: 600px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-question {
+    font-size: 0.875rem;
+  }
+  .faq-item-open .faq-answer {
+    max-height: 800px;
+  }
+}

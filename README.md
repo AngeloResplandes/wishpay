@@ -1,73 +1,77 @@
-# React + TypeScript + Vite
+# Wishpay
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page de uma plataforma de pagamentos fictícia, desenvolvida com React 19, TypeScript e Vite. O projeto é totalmente estático, focado em apresentação visual e experiência do usuário com animações de scroll e design responsivo de 320px até desktop.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React 19** — componentes funcionais com hooks
+- **TypeScript 5.9** — tipagem estrita
+- **Vite 8** — build e HMR
+- **CSS Modules** — estilos com escopo por componente
+- **General Sans** (Fontshare) — tipografia
 
-## React Compiler
+## Estrutura
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+src/
+├── components/
+│   ├── Navbar/          # Header sticky com drawer mobile
+│   ├── Hero/            # Banner principal
+│   ├── Strategic/       # Seção de segurança
+│   ├── Features/        # Cards de funcionalidades
+│   ├── Integrations/    # Grid de integrações
+│   ├── Pricing/         # Planos de preço
+│   ├── FAQ/             # Accordion de perguntas
+│   ├── CTABanner/       # Call to action
+│   └── Footer/          # Rodapé
+├── hooks/
+│   ├── useIntersectionObserver.ts  # Animações fade-in no scroll
+│   └── useScrolled.ts              # Detecta scroll da navbar
+├── icons/               # Componentes SVG
+├── styles/
+│   ├── globals.css      # Design tokens e reset
+│   ├── animations.css   # Keyframes e fade-in-up
+│   └── components.css   # Botões e pricing card
+└── utils/
+    └── smoothScroll.ts  # Scroll suave para seções
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Instalação
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+## Scripts
+
+| Comando | Descrição |
+|---|---|
+| `npm run dev` | Inicia o servidor de desenvolvimento |
+| `npm run build` | Gera o build de produção |
+| `npm run preview` | Visualiza o build localmente |
+| `npm run lint` | Executa o ESLint |
+
+## Design Tokens
+
+As variáveis CSS estão definidas em `src/styles/globals.css`:
+
+```css
+--color-purple-deep:  #5B2D8E   /* cor primária */
+--color-purple-mid:   #7B3FB5
+--color-purple-light: #9B59B6
+--font-family:        'General Sans', sans-serif
+--container-max:      1200px
+--nav-height:         72px
+```
+
+## Responsividade
+
+| Breakpoint | Layout |
+|---|---|
+| 320px | Mobile mínimo — itens em coluna única |
+| 375px | iPhone padrão |
+| 480px | Mobile — grid de 2 colunas em integrações |
+| 640px | Intermediário — grid de 3 colunas |
+| 768px | Menu hambúrguer, drawer lateral roxo |
+| 1024px | Tablet — visuais decorativos ocultados |
+| 1280px | Desktop completo |

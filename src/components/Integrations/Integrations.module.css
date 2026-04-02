@@ -27,3 +27,61 @@
 .app-tile:hover { background: rgba(255,255,255,0.1); border-color: rgba(155,89,182,0.4); transform: translateY(-4px) scale(1.03); }
 .app-tile-icon { width: 40px; height: 40px; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; }
 .app-tile-name { font-size: 0.65rem; font-weight: 600; color: rgba(255,255,255,0.55); text-align: center; }
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1024px) {
+  .integrations__inner {
+    grid-template-columns: 1fr;
+  }
+  .integrations__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .integrations::before {
+    width: 380px;
+    height: 380px;
+    top: -100px;
+    right: -60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .integrations__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .integrations__desc {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .integrations__grid {
+    gap: 10px;
+  }
+  .app-tile {
+    padding: 12px 8px;
+  }
+  .app-tile-icon {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* globals sets 2-col at 480px — reinforce with gap reduction */
+  .integrations__grid {
+    gap: 8px;
+  }
+  .integrations::before {
+    width: 240px;
+    height: 240px;
+    top: -60px;
+    right: -40px;
+  }
+}
+
+@media (max-width: 375px) {
+  .app-tile-name {
+    font-size: 0.6rem;
+  }
+}

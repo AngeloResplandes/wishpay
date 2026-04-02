@@ -77,3 +77,128 @@
 .hamburger-active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .hamburger-active span:nth-child(2) { opacity: 0; }
 .hamburger-active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ===== KEYFRAMES ===== */
+@keyframes drawerSlideIn {
+  from { transform: translateX(-100%); }
+  to   { transform: translateX(0); }
+}
+
+@keyframes drawerFadeIn {
+  from { opacity: 0; transform: translateX(-12px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+  /* backdrop-filter cria stacking context — usar position:absolute no lugar de fixed */
+  .navbar__inner {
+    gap: 0;
+  }
+
+  .navbar__links,
+  .navbar__actions {
+    display: none;
+  }
+
+  .navbar__hamburger {
+    display: flex;
+    margin-left: auto;
+  }
+
+  /* DRAWER — painel que abre da esquerda, position:absolute relativo ao header sticky */
+  .navbar__links:global(.is-open) {
+    position: absolute;
+    top: 100%;                        /* logo abaixo da barra do header */
+    left: 0;
+    width: min(300px, 82vw);
+    height: calc(100vh - var(--nav-height));
+    background: var(--color-purple-deep);
+    z-index: 199;
+
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.75rem 9rem;       /* padding-bottom reserva espaço para os botões */
+    gap: 0;
+    overflow-y: auto;
+    transform: none;                  /* remove translateX(-50%) do desktop */
+
+    /* Backdrop escuro à direita do drawer */
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.45);
+
+    /* Animação de entrada */
+    animation: drawerSlideIn 0.3s cubic-bezier(0.4, 0, 0.2, 1) both;
+  }
+
+  .navbar__links:global(.is-open) a {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem 0.75rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 0;
+    width: 100%;
+    background: none;
+    display: block;
+
+    /* Cada link entra com leve atraso em cascata */
+    animation: drawerFadeIn 0.3s cubic-bezier(0.4, 0, 0.2, 1) both;
+  }
+
+  .navbar__links:global(.is-open) li:nth-child(1) a { animation-delay: 0.08s; }
+  .navbar__links:global(.is-open) li:nth-child(2) a { animation-delay: 0.13s; }
+  .navbar__links:global(.is-open) li:nth-child(3) a { animation-delay: 0.18s; }
+  .navbar__links:global(.is-open) li:nth-child(4) a { animation-delay: 0.23s; }
+
+  .navbar__links:global(.is-open) a:hover {
+    color: var(--color-white);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-md);
+  }
+
+  /* Botões fixos no rodapé do drawer.
+     O header sticky fica em top:0, então top:calc(100vh - X) = X px acima do fundo da tela. */
+  .navbar__actions:global(.is-open) {
+    animation: drawerFadeIn 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0.25s both;
+    position: absolute;
+    top: calc(100vh - var(--nav-height) - 130px); /* 2 botões + gap + padding */
+    left: 0;
+    width: min(300px, 82vw);
+    z-index: 200;
+
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.75rem 2rem;
+    gap: 0.75rem;
+    background: var(--color-purple-deep);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 1rem;
+  }
+
+  /* Botões adaptados para o fundo roxo */
+  .navbar__actions:global(.is-open) :global(.btn-ghost) {
+    color: rgba(255, 255, 255, 0.85);
+    border-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navbar__actions:global(.is-open) :global(.btn-ghost):hover {
+    color: var(--color-white);
+    border-color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .navbar__actions:global(.is-open) :global(.btn-primary) {
+    background: var(--color-white);
+    color: var(--color-purple-deep);
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navbar__actions:global(.is-open) :global(.btn-primary):hover {
+    background: var(--color-purple-pale);
+    transform: translateY(-1px);
+  }
+}
