@@ -44,28 +44,28 @@ export function Hero() {
           <div className={styles['hero__content']}>
             <div className={`${styles['hero__eyebrow']} fade-in-up`}>
               <span className={styles['hero__eyebrow-dot']} />
-              New · Wishpay 2.0 is here →
+              Novo · Wishpay 2.0 chegou →
             </div>
 
             <h1 className={`${styles['hero__title']} fade-in-up`} style={{ '--delay': '0.1s' } as React.CSSProperties}>
-              <span className={styles['hero__title-line']}>Enhance your</span>
-              <span className={styles['hero__title-line']}>Financial with</span>
+              <span className={styles['hero__title-line']}>Potencialize sua</span>
+              <span className={styles['hero__title-line']}>vida financeira com</span>
               <span className={`${styles['hero__title-line']} ${styles['hero__title-accent']}`}>Wishpay</span>
             </h1>
 
             <p className={`${styles['hero__subtitle']} fade-in-up`} style={{ '--delay': '0.15s' } as React.CSSProperties}>
-              Moving money should never take more than a few taps. Transfers are always free
-              between friends.
+              Movimentar dinheiro nunca deve levar mais do que alguns toques. Transferências são sempre gratuitas
+              entre amigos.
             </p>
 
             <div className={`${styles['hero__actions']} fade-in-up`} style={{ '--delay': '0.2s' } as React.CSSProperties}>
               <a href="#" className="btn-primary btn-lg">
-                Send Money Now <ArrowRightIcon />
+                Enviar Dinheiro Agora <ArrowRightIcon />
               </a>
             </div>
 
             <div className={`${styles['hero__partners']} fade-in-up`} style={{ '--delay': '0.25s' } as React.CSSProperties}>
-              <span className={styles['hero__partners-label']}>Trusted by</span>
+              <span className={styles['hero__partners-label']}>Confiado por</span>
               <div className={styles['hero__partners-divider']} />
               {PARTNERS.map((p) => (
                 <a key={p.name} href="#" className={styles['partner-logo']}>
@@ -78,12 +78,12 @@ export function Hero() {
             <div className={`${styles['hero__stats']} fade-in-up`} style={{ '--delay': '0.3s' } as React.CSSProperties}>
               <div className="stat-block">
                 <span className={styles['stat-value']}>75K+</span>
-                <span className={styles['stat-label']}>Satisfied users already</span>
+                <span className={styles['stat-label']}>Usuários satisfeitos</span>
               </div>
               <div className={styles['stat-divider']} />
               <div className="stat-block">
                 <span className={styles['stat-value']}>92%</span>
-                <span className={styles['stat-label']}>Develop Your Software</span>
+                <span className={styles['stat-label']}>Aprovação dos clientes</span>
               </div>
             </div>
           </div>
@@ -125,14 +125,14 @@ export function Hero() {
                   </svg>
                 </div>
                 <div>
-                  <div className={styles['hero-balance-label']}>Total Balance</div>
-                  <div className={styles['hero-balance-amount']}>$24,890.00</div>
+                  <div className={styles['hero-balance-label']}>Saldo Total</div>
+                  <div className={styles['hero-balance-amount']}>$24.890,00</div>
                 </div>
               </div>
 
               <div className={styles['hero-card-transfer']}>
                 <div className={styles['hero-transfer-dot']} />
-                <span className={styles['hero-transfer-text']}>Payment received</span>
+                <span className={styles['hero-transfer-text']}>Pagamento recebido</span>
                 <span className={styles['hero-transfer-amount']}>+$1,250.00</span>
               </div>
             </div>

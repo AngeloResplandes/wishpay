@@ -15,14 +15,14 @@ export function CTABanner() {
           <div className={styles['cta-shape'] + ' ' + styles['cta-shape-2']} />
           <div className={styles['cta-shape'] + ' ' + styles['cta-shape-3']} />
           <div className={styles['cta-banner__content']}>
-            <span className={styles['cta-banner__eyebrow']}>Get Started Today</span>
-            <h2>Simplify payments management</h2>
+            <span className={styles['cta-banner__eyebrow']}>Comece Hoje</span>
+            <h2>Simplifique a gestão de pagamentos</h2>
             <p>
-              Sync and link your international business account that wires you money whenever
-              you want to get paid.
+              Sincronize e conecte sua conta empresarial internacional para receber dinheiro
+              sempre que quiser ser pago.
             </p>
             <a href="#" className="btn-white">
-              Start Now <ArrowRightIcon />
+              Começar Agora <ArrowRightIcon />
             </a>
           </div>
         </div>

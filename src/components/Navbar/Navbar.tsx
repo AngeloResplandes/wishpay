@@ -5,10 +5,10 @@ import { useScrolled } from '../../hooks/useScrolled'
 import { smoothScrollTo } from '../../utils/smoothScroll'
 
 const NAV_LINKS = [
-  { label: 'Personal', href: '#strategic' },
-  { label: 'Business', href: '#features' },
-  { label: 'Enterprise', href: '#integrations' },
-  { label: 'Developer', href: '#pricing' },
+  { label: 'Pessoal', href: '#strategic' },
+  { label: 'Negócios', href: '#features' },
+  { label: 'Empresarial', href: '#integrations' },
+  { label: 'Desenvolvedor', href: '#pricing' },
 ]
 
 export function Navbar() {
@@ -55,8 +55,8 @@ export function Navbar() {
           </ul>
 
           <div className={`${styles['navbar__actions']} ${isOpen ? 'is-open' : ''}`}>
-            <a href="#" className="btn-ghost">Login</a>
-            <a href="#" className="btn-primary">Start Now</a>
+            <a href="#" className="btn-ghost">Entrar</a>
+            <a href="#" className="btn-primary">Começar Agora</a>
           </div>
 
           <button

@@ -3,43 +3,43 @@ import { LogoIcon } from '../../icons/LogoIcon'
 
 const FOOTER_COLUMNS = [
   {
-    title: 'Account',
+    title: 'Conta',
     links: [
-      { label: 'My Account', href: '#' },
-      { label: 'All Products', href: '#' },
-      { label: 'My Profile', href: '#' },
-      { label: 'Resources', href: '#' },
+      { label: 'Minha Conta', href: '#' },
+      { label: 'Todos os Produtos', href: '#' },
+      { label: 'Meu Perfil', href: '#' },
+      { label: 'Recursos', href: '#' },
       { label: 'Blog', href: '#' },
     ],
   },
   {
-    title: 'Help',
+    title: 'Ajuda',
     links: [
-      { label: 'Help Center', href: '#' },
-      { label: 'Community', href: '#' },
-      { label: 'Site Map', href: '#' },
+      { label: 'Central de Ajuda', href: '#' },
+      { label: 'Comunidade', href: '#' },
+      { label: 'Mapa do Site', href: '#' },
       { label: 'Cookies', href: '#' },
-      { label: 'Contact', href: '#' },
+      { label: 'Contato', href: '#' },
     ],
   },
   {
-    title: 'Finance',
+    title: 'Finanças',
     links: [
-      { label: 'Crypto/Bitcoin', href: '#' },
+      { label: 'Cripto/Bitcoin', href: '#' },
       { label: 'Ethereum', href: '#' },
-      { label: 'Stocks', href: '#' },
-      { label: 'Bonds', href: '#' },
+      { label: 'Ações', href: '#' },
+      { label: 'Títulos', href: '#' },
       { label: 'ETFs', href: '#' },
     ],
   },
   {
-    title: 'Company',
+    title: 'Empresa',
     links: [
-      { label: 'About', href: '#' },
-      { label: 'Careers', href: '#' },
-      { label: 'Press', href: '#' },
-      { label: 'Partners', href: '#' },
-      { label: 'Legal', href: '#' },
+      { label: 'Sobre', href: '#' },
+      { label: 'Carreiras', href: '#' },
+      { label: 'Imprensa', href: '#' },
+      { label: 'Parceiros', href: '#' },
+      { label: 'Jurídico', href: '#' },
     ],
   },
 ]
@@ -55,9 +55,9 @@ export function Footer() {
               <span className={styles['footer__brand-logo-text']}>Wishpay</span>
             </div>
             <p className={styles['footer__brand-desc']}>
-              The smart payment platform for modern teams and businesses worldwide.
+              A plataforma de pagamentos inteligente para equipes e empresas modernas no mundo todo.
             </p>
-            <p className={styles['footer__follow-label']}>Follow Us</p>
+            <p className={styles['footer__follow-label']}>Siga-nos</p>
             <div className={styles['footer__socials']}>
               <a href="#" className={styles['footer__social-link']} aria-label="Twitter">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
@@ -98,10 +98,10 @@ export function Footer() {
       <div className={styles['footer__bottom']}>
         <div className="container">
           <div className={styles['footer__bottom-inner']}>
-            <span className={styles['footer__copyright']}>©2024 Wishpay Payment Technologies</span>
+            <span className={styles['footer__copyright']}>©2024 Wishpay Tecnologias de Pagamento</span>
             <div className={styles['footer__legal']}>
-              <a href="#">Privacy Policy</a>
-              <a href="#">Terms of Service</a>
+              <a href="#">Política de Privacidade</a>
+              <a href="#">Termos de Uso</a>
               <a href="#">Cookies</a>
             </div>
           </div>

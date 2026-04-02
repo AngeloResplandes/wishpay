@@ -10,11 +10,11 @@ export function Features() {
     <section id="features" className={styles.features} ref={sectionRef}>
       <div className="container">
         <div className={`${styles['features__header']} fade-in-up`}>
-          <span className="section-label">Features</span>
-          <h2>Future banking you need</h2>
+          <span className="section-label">Funcionalidades</span>
+          <h2>O banco do futuro que você precisa</h2>
           <p>
-            Whether you're a small business, or a large corporation, we have a plan that's right
-            for you.
+            Seja uma pequena empresa ou uma grande corporação, temos um plano ideal
+            para você.
           </p>
         </div>
 
@@ -24,11 +24,11 @@ export function Features() {
             className={`${styles['feat-card']} ${styles['feat-card--dark']} fade-in-up`}
             style={{ '--delay': '0.1s' } as React.CSSProperties}
           >
-            <div className={styles['feat-card__label']}>Earn Rewards</div>
-            <h3 className={styles['feat-card__title']}>Earn Rewards</h3>
+            <div className={styles['feat-card__label']}>Ganhe Recompensas</div>
+            <h3 className={styles['feat-card__title']}>Ganhe Recompensas</h3>
             <p className={styles['feat-card__desc']}>
-              A small business, or a large organization, you'll be charged a low fee on all
-              transactions and earn rewards along the way.
+              Pequena empresa ou grande organização, você paga uma taxa reduzida em todas as
+              transações e acumula recompensas no caminho.
             </p>
             <div className={styles['rewards-visual']}>
               <div className={styles['rewards-coin']}>⭐</div>
@@ -44,11 +44,11 @@ export function Features() {
             className={`${styles['feat-card']} ${styles['feat-card--light']} fade-in-up`}
             style={{ '--delay': '0.2s' } as React.CSSProperties}
           >
-            <div className={styles['feat-card__label']}>Security</div>
-            <h3 className={styles['feat-card__title']}>Always Protected</h3>
+            <div className={styles['feat-card__label']}>Segurança</div>
+            <h3 className={styles['feat-card__title']}>Sempre Protegido</h3>
             <p className={styles['feat-card__desc']}>
-              Shopping gets easier to start with 2-part protection and real-time transaction
-              monitoring for your peace of mind.
+              Compras mais fáceis com proteção em duas etapas e monitoramento de transações
+              em tempo real para sua tranquilidade.
             </p>
             <div className={styles['protected-visual']}>
               <div className={styles['protected-header']}>
@@ -59,13 +59,13 @@ export function Features() {
                   </svg>
                 </div>
                 <div>
-                  <div className={styles['protected-info-title']}>Request Money From Jenny Wilson → You</div>
-                  <div className={styles['protected-info-sub']}>Secured transaction</div>
+                  <div className={styles['protected-info-title']}>Solicitação de Jenny Wilson → Você</div>
+                  <div className={styles['protected-info-sub']}>Transação segura</div>
                 </div>
               </div>
               <div className={styles['protected-status']}>
                 <div className={styles['protected-status-dot']} />
-                <span className={styles['protected-status-text']}>Transaction Secured ✓</span>
+                <span className={styles['protected-status-text']}>Transação Segura ✓</span>
               </div>
             </div>
           </div>
@@ -75,10 +75,10 @@ export function Features() {
             className={`${styles['feat-card']} ${styles['feat-card--light']} fade-in-up`}
             style={{ '--delay': '0.3s' } as React.CSSProperties}
           >
-            <div className={styles['feat-card__label']}>Portfolio</div>
-            <h3 className={styles['feat-card__title']}>No asset volatility</h3>
+            <div className={styles['feat-card__label']}>Portfólio</div>
+            <h3 className={styles['feat-card__title']}>Sem volatilidade de ativos</h3>
             <p className={styles['feat-card__desc']}>
-              Generous returns on your financial balance with consistent and predictable growth.
+              Retornos generosos sobre seu saldo financeiro com crescimento consistente e previsível.
             </p>
             <div className={styles['chart-header']}>
               <span className={styles['chart-value']}>$1,876,580</span>
@@ -111,10 +111,10 @@ export function Features() {
             className={`${styles['feat-card']} ${styles['feat-card--light']} fade-in-up`}
             style={{ '--delay': '0.4s' } as React.CSSProperties}
           >
-            <div className={styles['feat-card__label']}>Payments</div>
-            <h3 className={styles['feat-card__title']}>Get paid faster</h3>
+            <div className={styles['feat-card__label']}>Pagamentos</div>
+            <h3 className={styles['feat-card__title']}>Receba mais rápido</h3>
             <p className={styles['feat-card__desc']}>
-              Divide flexible, streaming payments across teams and vendors with instant settlement.
+              Divida pagamentos flexíveis entre equipes e fornecedores com liquidação instantânea.
             </p>
             <div className={styles['paid-visual']}>
               <div className={styles['paid-header']}>
@@ -122,15 +122,15 @@ export function Features() {
                   <div className={styles['paid-avatar']}>JW</div>
                   <div>
                     <div className={styles['paid-name']}>Jenny Wilson</div>
-                    <div className={styles['paid-date']}>Mar 28, 2026</div>
+                    <div className={styles['paid-date']}>28 mar. 2026</div>
                   </div>
                 </div>
               </div>
               <div className={styles['paid-amount-box']}>
-                <div className={styles['paid-amount-label']}>Amount due</div>
+                <div className={styles['paid-amount-label']}>Valor devido</div>
                 <div className={styles['paid-amount-value']}><sup>$</sup>5</div>
               </div>
-              <button className={styles['paid-btn']}>Pay Now</button>
+              <button className={styles['paid-btn']}>Pagar Agora</button>
             </div>
           </div>
         </div>

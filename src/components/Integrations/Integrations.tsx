@@ -99,14 +99,14 @@ export function Integrations() {
       <div className="container">
         <div className={styles['integrations__inner']}>
           <div className={`${styles['integrations__content']} fade-in-up`}>
-            <span className="section-label section-label--light">Integrations</span>
-            <h2 className={styles['integrations__title']}>Shop everywhere, anywhere</h2>
+            <span className="section-label section-label--light">Integrações</span>
+            <h2 className={styles['integrations__title']}>Compre em qualquer lugar</h2>
             <p className={styles['integrations__desc']}>
-              It's new and better to pay anywhere. All you need is an email address to send and
-              receive payments in your 10 connected bank accounts, anywhere.
+              Uma forma nova e melhor de pagar em qualquer lugar. Basta um e-mail para enviar e
+              receber pagamentos em suas 10 contas bancárias conectadas, onde quer que esteja.
             </p>
             <a href="#" className="btn-outline">
-              Explore More <ArrowRightIcon />
+              Explorar Mais <ArrowRightIcon />
             </a>
           </div>
 

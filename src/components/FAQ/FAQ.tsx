@@ -5,24 +5,24 @@ import { ChevronDownIcon } from '../../icons/ChevronDownIcon'
 
 const FAQ_ITEMS = [
   {
-    question: 'What is Wishpay?',
+    question: 'O que é o Wishpay?',
     answer:
-      'Wishpay is a payment platform that helps individuals and businesses manage their money — making it easy to send money from your account. Your transactions are always transparent and secure, protected by industry-leading encryption.',
+      'O Wishpay é uma plataforma de pagamentos que ajuda pessoas físicas e empresas a gerenciar seu dinheiro — facilitando o envio de valores a partir da sua conta. Suas transações são sempre transparentes e seguras, protegidas por criptografia líder do setor.',
   },
   {
-    question: 'How do I send money to share it account?',
+    question: 'Como envio dinheiro para outra conta?',
     answer:
-      'Simply tap "Send Money", enter the recipient\'s email or phone number, type in the amount, and hit send. The money arrives instantly for Wishpay users, and within 1-2 business days for external bank accounts.',
+      'Basta tocar em "Enviar Dinheiro", inserir o e-mail ou telefone do destinatário, digitar o valor e confirmar. O dinheiro chega instantaneamente para usuários Wishpay e em 1 a 2 dias úteis para contas bancárias externas.',
   },
   {
-    question: 'What happens when I go over the block limit on my Free plan?',
+    question: 'O que acontece se eu atingir o limite do meu plano Gratuito?',
     answer:
-      'You cannot exceed your sending limit on the Free plan. You\'ll receive a notification before you hit the limit, and you can easily upgrade to the Business plan for unlimited transfers and expanded access.',
+      'Você não pode ultrapassar o limite de envio do plano Gratuito. Você receberá uma notificação antes de atingir o limite e poderá fazer upgrade para o plano Negócios para transferências ilimitadas e acesso ampliado.',
   },
   {
-    question: 'How do I verify my identity?',
+    question: 'Como verifico minha identidade?',
     answer:
-      'Identity verification takes just a few minutes. Upload a government-issued ID and a selfie through the app. Our automated system verifies your identity securely and you\'ll be approved within minutes.',
+      'A verificação de identidade leva apenas alguns minutos. Envie um documento oficial com foto e uma selfie pelo aplicativo. Nosso sistema automatizado verifica sua identidade com segurança e você será aprovado em minutos.',
   },
 ]
 
@@ -37,8 +37,8 @@ export function FAQ() {
         <div className={styles['faq__inner']}>
           <div className={`${styles['faq__header']} fade-in-up`}>
             <span className="section-label">FAQ</span>
-            <h2>Frequently Asked Questions</h2>
-            <p>Everything you need to know about Wishpay and how it works.</p>
+            <h2>Perguntas Frequentes</h2>
+            <p>Tudo que você precisa saber sobre o Wishpay e como ele funciona.</p>
           </div>
 
           <div className={`${styles['faq__list']} fade-in-up`} style={{ '--delay': '0.15s' } as React.CSSProperties}>

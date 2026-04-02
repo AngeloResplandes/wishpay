@@ -1,7 +1,7 @@
 /* ===== FAQ ===== */
 .faq { padding: 5rem 0; background: var(--color-white); }
 .faq__inner { display: grid; grid-template-columns: 1fr 1.8fr; gap: 5rem; align-items: start; }
-.faq__header h2 { font-size: clamp(1.8rem, 3.5vw, 2.5rem); font-weight: 800; letter-spacing: -0.025em; margin-bottom: 1rem; }
+.faq__header h2 { font-size: clamp(1.8rem, 3.5vw, 2.5rem); font-weight: 700; letter-spacing: -0.025em; margin-bottom: 1rem; }
 .faq__header p { font-size: 0.95rem; color: var(--color-gray-600); line-height: 1.7; }
 .faq__list { display: flex; flex-direction: column; }
 .faq-item { border-bottom: 1px solid var(--color-gray-200); }

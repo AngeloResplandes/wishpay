@@ -17,46 +17,46 @@ interface PricingPlan {
 
 const PLANS: PricingPlan[] = [
   {
-    name: 'Personal',
+    name: 'Pessoal',
     price: '5',
-    period: '/month',
-    description: 'Best for budgeting individuals and freelancers who want simple, low-cost transfers.',
+    period: '/mês',
+    description: 'Ideal para pessoas físicas e freelancers que querem transferências simples e baratas.',
     features: [
-      'No payments team office needed',
-      'Faster payments and group setup',
-      '2-hour support response time',
+      'Sem necessidade de equipe de pagamentos',
+      'Pagamentos mais rápidos e configuração em grupo',
+      'Suporte com resposta em até 2 horas',
     ],
-    cta: 'Try for Free',
+    cta: 'Testar Grátis',
     ctaClass: 'pricing-btn-outline',
   },
   {
-    name: 'Business',
+    name: 'Negócios',
     price: '20',
-    period: '/month',
-    description: 'Get everything you need to connect financial services and scale your business.',
+    period: '/mês',
+    description: 'Tudo que você precisa para conectar serviços financeiros e escalar seu negócio.',
     features: [
-      'No payments team office needed',
-      'Faster payments and group setup',
-      'All-round support response time',
-      'Always benefit from best rates and features',
+      'Sem necessidade de equipe de pagamentos',
+      'Pagamentos mais rápidos e configuração em grupo',
+      'Suporte completo a qualquer hora',
+      'Aproveite sempre as melhores tarifas e funcionalidades',
     ],
-    cta: 'Get Started',
+    cta: 'Começar Agora',
     ctaClass: 'pricing-btn-primary',
     featured: true,
-    badge: 'Most Popular',
+    badge: 'Mais Popular',
   },
   {
-    name: 'Enterprise',
-    price: 'Custom',
-    period: 'contact sales',
-    description: 'Tailored solutions for large organizations with complex financial workflows.',
+    name: 'Empresarial',
+    price: 'Personalizado',
+    period: 'fale com vendas',
+    description: 'Soluções sob medida para grandes organizações com fluxos financeiros complexos.',
     features: [
-      'No payments team office needed',
-      'Faster payments and group setup',
-      'All-round support response time',
-      'Always benefit from best rates and features',
+      'Sem necessidade de equipe de pagamentos',
+      'Pagamentos mais rápidos e configuração em grupo',
+      'Suporte completo a qualquer hora',
+      'Aproveite sempre as melhores tarifas e funcionalidades',
     ],
-    cta: 'Contact Sales',
+    cta: 'Falar com Vendas',
     ctaClass: 'pricing-btn-outline',
   },
 ]
@@ -69,9 +69,9 @@ export function Pricing() {
     <section id="pricing" className={styles.pricing} ref={sectionRef}>
       <div className="container">
         <div className={`${styles['pricing__header']} fade-in-up`}>
-          <span className="section-label">Pricing</span>
-          <h2>Plans for every budget</h2>
-          <p>Whether you're a small business, or a large corporation, we have a plan that's right for you.</p>
+          <span className="section-label">Planos</span>
+          <h2>Planos para todo orçamento</h2>
+          <p>Seja uma pequena empresa ou uma grande corporação, temos um plano ideal para você.</p>
         </div>
 
         <div className={styles['pricing__grid']}>
@@ -84,7 +84,7 @@ export function Pricing() {
               {plan.badge && <span className="pricing-badge">{plan.badge}</span>}
               <div className="pricing-plan">{plan.name}</div>
               <div className="pricing-price">
-                {plan.price !== 'Custom' && <span className="pricing-currency">$</span>}
+                {plan.price !== 'Personalizado' && <span className="pricing-currency">$</span>}
                 <span className="pricing-amount">{plan.price}</span>
               </div>
               <div className="pricing-period">{plan.period}</div>

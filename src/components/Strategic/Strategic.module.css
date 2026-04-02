@@ -3,7 +3,7 @@
 .strategic__inner { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 4rem; }
 .strategic__title {
   font-size: clamp(1.8rem, 3.5vw, 2.5rem);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.025em;
   margin-bottom: 1rem;
